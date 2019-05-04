@@ -1,0 +1,3 @@
+[submodule "my_plugins/vimtex"]
+	path = my_plugins/vimtex
+	url = https://github.com/lervag/vimtex/
