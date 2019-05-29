@@ -18,3 +18,22 @@ if has("gui_running")
         \ . ':call remote_foreground('''.v:servername.''')^<CR^>^<CR^>\""'
   endif
 endif
+
+augroup latexSurround
+autocmd!
+autocmd FileType tex call s:latexSurround()
+augroup END
+
+function! s:latexSurround()
+let b:surround_{char2nr("e")}
+\ = "\\begin{\1environment: \1}\n\t\r\n\\end{\1\1}"
+let b:surround_{char2nr("c")} = "\\\1command: \1{\r}"
+endfunction
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"

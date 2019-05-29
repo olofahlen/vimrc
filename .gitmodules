@@ -1,3 +1,6 @@
 [submodule "my_plugins/vimtex"]
 	path = my_plugins/vimtex
 	url = https://github.com/lervag/vimtex/
+[submodule "my_plugins/ultisnips"]
+	path = my_plugins/ultisnips
+	url = https://github.com/SirVer/ultisnips
