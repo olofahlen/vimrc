@@ -1,3 +1,6 @@
+[submodule "sources_non_forked/vim-isort"]
+	path = sources_non_forked/vim-isort
+	url = https://github.com/fisadev/vim-isort
 [submodule "my_plugins/vimtex"]
 	path = my_plugins/vimtex
 	url = https://github.com/lervag/vimtex/
