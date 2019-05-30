@@ -4,6 +4,11 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Olof's addition for disabling plugins
+let g:pathogen_disabled = []
+call add(g:pathogen_disabled, 'auto-pairs')
+call add(g:pathogen_disabled, 'vim-snipmate')
+
 
 """"""""""""""""""""""""""""""
 " => Load pathogen paths
