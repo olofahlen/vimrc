@@ -4,7 +4,9 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Olof's addition for disabling plugins
+""""""""""""""""""""""""""""""
+" => Disable selected plugins
+""""""""""""""""""""""""""""""
 let g:pathogen_disabled = []
 call add(g:pathogen_disabled, 'auto-pairs')
 call add(g:pathogen_disabled, 'vim-snipmate')

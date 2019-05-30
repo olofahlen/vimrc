@@ -1,5 +1,21 @@
 extends texmath
 
-snippet " "Latex quote" i
+snippet " "Latex quote" A
 \`\`${1:${VISUAL}}''
+endsnippet
+
+snippet __ "Subscript" iA
+_{${1}}${0}
+endsnippet
+
+snippet ^^ "Superscript" iA
+^{${1}}${0}
+endsnippet
+
+snippet / "Fraction" i
+\\frac{${1}}{${2}}${0}
+endsnippet
+
+snippet (( "LR parentheses" iA
+\\left( ${1:${VISUAL}} \\right)
 endsnippet
