@@ -1,3 +1,10 @@
+" Turn on spell checking
+set spell
+
+" Use relative numbers (benefits from vim-numbertoggle)
+set number relativenumber
+
+
 " Set backup font in case the Awesome-fonts don't exist
 if has("gui_running")
   if has("gui_gtk2")
